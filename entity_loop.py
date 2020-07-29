@@ -41,25 +41,40 @@ if attribute = any in airport_dict.airport[]:
 
 ## what about by city? LAX just let the tjhem as the bot, show me la stats. and the bot can do that
 ## we know that if they say lAX they ware probably flyign into LA but how knows NOT sf
-airport_dict = {
-    location = 'New York',
-    airport = [ 'JFK', 'LGA', 'EGW']
+airport = [
+    {
+    'location': 'New York',
+    'airport-code':[ 'JFK', 'LGA', 'EGW']
 
 }, 
 {
-    location = 'New Jersey',
-    airport = ['EGW']
+    'location':'New Jersey',
+    'airport-code':['EGW']
 },
 {
-    location = 'California',
-    airport = ['LAX','SFO']
+    'location':'California',
+    'airport-code':['LAX','SFO']
 },
 {
-    location = 'Florida',
-    airport = ['MIA', 'FLL']
+    'location':'Florida',
+    'airport-code':['MIA', 'FLL']
 }
+]
 
-}
+for student in students:
+    for value in student:
+        print (value, "is", student[value])
+
+
+
+
+student = [lloyd, alice, tyler]
+for student in students:
+    for value in student:
+        print (value, "is", student[value])
+
+
+
 list_of_airport_codes = [ 'JFK', 'LGA', 'EGW', 'LAX', 'FLL', 'MIA', 'SFO']
 list_of_hotels = ['Hyatt', 'Hilton', 'Mariott']
 
@@ -70,10 +85,6 @@ list_of_enitity_types = ['airline', 'airport', 'hotel', 'location']
 JFK
 jfk slot 
 airport 
-students = [lloyd, alice, tyler]
-for student in students:
-    for value in student:
-        print (value, "is", student[value])
 
 
 class SetSlotEntityTypeAirport(Action):
