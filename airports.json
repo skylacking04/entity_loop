@@ -1,0 +1,23 @@
+{
+    "airports": [
+    {
+    "location": "New York",
+    "airport-code": "JFK",
+    "airport-code": "LGA"
+    }, 
+    {
+    "location": "New Jersey",
+    "airport-code": "EGW"
+    },
+    {
+    "location": "California",
+    "airport-code": "SFO",
+    "airport-code": "LAX"
+    },
+    {
+    "location": "Florida",
+    "airport-code": "FLL",
+    "airport-code": "MIA"
+    }
+  ]
+}

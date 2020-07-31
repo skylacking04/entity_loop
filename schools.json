@@ -1,0 +1,24 @@
+{
+   "schools": [
+      {
+       "location": "New York",
+       "school-code": "NYOUT", 
+       "school-code-2": "CITYU", 
+       "school-code-3": "UTU"
+       },
+      {
+       "location": "New Jersey",
+       "school-code": "MGOA", 
+       "school-code-2": "NJCU", 
+       "school-code-3": "NJO"
+      },
+      {
+       "location": "California",
+       "school-code": "CAL"
+      },
+      {
+       "location": "Florida",
+       "school-code":"CDY"
+    } ] }
+
+

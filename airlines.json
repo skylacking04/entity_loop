@@ -1,0 +1,22 @@
+{
+    "airlines":[
+    {
+        "fs":"0B",
+        "iata":"0B",
+        "icao":"BLA",
+        "name":["Blue Air","Carib Air"],
+        "active":true
+    },
+    {
+       "fs":"0C*","iata":"0C",
+       "name":"Cobra Aviation",
+       "active":true
+    },
+    {  "fs":"0G",
+       "icao":"GHT",
+       "name":"Ghadames Air",
+       "active":true
+    }
+]
+}
+    

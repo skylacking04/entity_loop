@@ -73,6 +73,12 @@ for student in students:
     for value in student:
         print (value, "is", student[value])
 
+## works for list
+for i in data:
+    if i['school-code'] or i['school-code-2'] == 'CityU':
+        print(i['location'])
+
+        break
 
 
 list_of_airport_codes = [ 'JFK', 'LGA', 'EGW', 'LAX', 'FLL', 'MIA', 'SFO']

@@ -1,0 +1,22 @@
+
+{
+    "schools": [
+       {
+        "location": "New York",
+        "school-code": ["MGOA", "CityU", "AKO"]
+        },
+       {
+        "location": "New Jersey",
+        "school-code": ["GOE"]
+       },
+       {
+        "location": "California",
+        "school-code": ["GOE"]
+       },
+       {
+        "location": "Florida",
+        "school-code":["CDY","OAK"]
+     }
+  ]
+ }
+ 
