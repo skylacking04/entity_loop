@@ -1,3 +1,9 @@
+given_school_code = input("What is your school code? ")
+
+# save the answer to a variable
+
+
+print("your sc is ", given_school_code)
 data = [
        {
         "location": "New York",
@@ -22,22 +28,30 @@ data = [
         "school-code-2": "fNJU2", 
         "school-code-3": "fNJUE"
        }
-        ]
+      
+    
+    ] 
+
 
 # for k, v in countries.items():
 #     if "1" in v:
 #         print k
 
-given_school_code = 'fNJU2'
+# given_school_code = 'NJU2'
 school_code = given_school_code
 
 for i in data:
-    if i['school-code-2'] == school_code:
-        print(i['location'])
-        new_loc = (i['location'])
-        print("the new loc", new_loc)
+    try:
+        if (school_code == i['school-code']) or (school_code == i['school-code-2']) or  (school_code == i['school-code-3'])  or  (school_code == i['school-code-4']):
+            print(i['location'])
+            new_loc = (i['location'])
+            print("Your School Zone is", new_loc)
+            break
+        else:
+            print("ah")
+    except:
+        print("uh oh")
 
-        break
 
 
 # for i in data:
