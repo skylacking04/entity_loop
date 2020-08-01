@@ -26,8 +26,7 @@ data = [
         "airport-code-2": "OCM", 
         "airport-code-3": "MIA"
        }
-      
-    
+          
     ] 
 
 airport_code = given_airport_code

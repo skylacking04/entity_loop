@@ -1,49 +1,58 @@
-given_school_code = input("What is your school code? ")
-
-# save the answer to a variable
+import json
 
 
-print(" you entered school code: ", given_school_code)
-data = [
-       {
-        "location": "New York",
-        "school-code": "CITY", 
-        "school-code-2": "NYU", 
-        "school-code-3": "CityU"
-        },
-       {
-        "location": "New Jersey",
-        "school-code": "NJU", 
-        "school-code-2": "NJU2", 
-        "school-code-3": "NJUE"
-       },
-       {
-        "location": "California",
-        "school-code": "CAL",
-        "school-code-2": "Cal2"
-       },
-       {
-        "location": "Florida",
-        "school-code": "fNJU", 
-        "school-code-2": "fNJU2", 
-        "school-code-3": "fNJUE"
-       }
-      
-    
-    ] 
+
+with open("airports.json", encoding='utf-8', errors='ignore') as json_data:
+    data = json.load(json_data, strict=False)
 
 
-school_code = given_school_code
+airport_code = "SFO"
+# print(data['airport'][0]['location'])
+# airport_code = given_airport_code
 
-for i in data:
+for i in data['airport']:
+    print(i['airport-code'])
     try:
-        if (school_code == i['school-code']) or (school_code == i['school-code-2']) or  (school_code == i['school-code-3'])  or  (school_code == i['school-code-4']):
-            # print(i['location'])
-            new_loc = (i['location'])
-            print("Your School Zone is", new_loc)
+        if (airport_code == i['airport-code']) or (airport_code == i['airport-code-2']) or  (airport_code == i['airport-code-3'])  or  (airport_code == i['airport-code-4']):
+            print(i['location'])
+            new_loc = i['location']
+            print("Your Location is ", new_loc)
             break
         else:
             print("ah")
     except:
         pass
-print("is this a new  loc? ", new_loc)
+
+
+
+
+# given_airport_code = input("What is your airport code? ")
+
+# save the answer to a variable
+
+
+# print("your airport code is ", given_airport_code)
+# data = [
+#        {
+#         "location": "New York",
+#         "airport-code": "JFK", 
+#         "airport-code-2": "LGA", 
+#         "airport-code-3": "LON"
+#         },
+#        {
+#         "location": "New Jersey",
+#         "airport-code": "EGW"
+#        },
+#        {
+#         "location": "California",
+#         "airport-code": "SFO",
+#         "airport-code-2": "LAX"
+#        },
+#        {
+#         "location": "Florida",
+#         "airport-code": "FLL", 
+#         "airport-code-2": "OCM", 
+#         "airport-code-3": "MIA"
+#        }
+          
+#     ] 

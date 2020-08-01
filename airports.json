@@ -1,23 +1,25 @@
 {
-    "airports": [
+    "airport": [
     {
     "location": "New York",
-    "airport-code": "JFK",
-    "airport-code": "LGA"
-    }, 
-    {
+    "airport-code": "JFK", 
+    "airport-code-2": "LGA", 
+    "airport-code-3": "LON"
+    },
+   {
     "location": "New Jersey",
     "airport-code": "EGW"
-    },
-    {
+   },
+   {
     "location": "California",
     "airport-code": "SFO",
-    "airport-code": "LAX"
-    },
-    {
+    "airport-code-2": "LAX"
+   },
+   {
     "location": "Florida",
-    "airport-code": "FLL",
-    "airport-code": "MIA"
-    }
+    "airport-code": "FLL", 
+    "airport-code-2": "OCM", 
+    "airport-code-3": "MIA"
+   }
   ]
 }
