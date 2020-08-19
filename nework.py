@@ -13,7 +13,9 @@ airport_list = data
 # print("the list air", airport_list)
 
 if airport_list.get(f'{given_airport_code}')!=None:
-    print(" Your location is ", airport_list.get(f'{given_airport_code}'))
+    airport_location = airport_list.get(f'{given_airport_code}')
+    
+    print(" Your location is ", airport_location)
 
 
 
